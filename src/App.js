@@ -1,8 +1,5 @@
 import React from 'react'
 
-import {Article, Brand, CTA, Feature, Nav} from './components' // import the components
-
-
 
 const App = () => { // define the App component
     return (
