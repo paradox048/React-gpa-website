@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './Navbar.css'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/chat-gpt.png'
 
 const Menu = () => {
   return (

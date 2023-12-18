@@ -1,0 +1,30 @@
+.gpt3__header--hero--padding {
+    display: flex;
+    width: 897px;
+    height: 409px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.gpt3__header--hero--text {
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.gpt3__header--hero--background--padding,
+.gpt3__header--hero--background {
+    display: flex;
+    width: 1440px;
+    height: 733px;
+    flex-shrink: 0;
+
+    background: url('../../assets/robot.png');
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
