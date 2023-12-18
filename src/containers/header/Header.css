@@ -7,6 +7,22 @@
     flex-shrink: 0;
 }
 
+.gpt3__navbar--hero--text_copyright {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    top: -140px;
+}
+
 .gpt3__header--hero--text {
     color: #FFF;
     text-align: center;
