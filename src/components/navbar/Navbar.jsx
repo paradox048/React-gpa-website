@@ -44,27 +44,66 @@ const Navbar = () => {
       }}>
         <ul className="gpt3__navbar--menu--links">
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#home">home</Link>
+            <Link to="/#home" onClick={() => setNavOpen(!navOpen)}
+            style={{
+              top: navOpen ? '0px' : '120px',
+              transitionDelay: navOpen ? '0.8s' : '0s',
+              opacity: navOpen ? '1' : '0',
+            }}>Home</Link>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#wgpt3">What is GPT-4?</Link>
+            <Link to="/#wgpt3" onClick={() => setNavOpen(!navOpen)} 
+            style={{
+              top: navOpen ? '0' : '120px',
+              transitionDelay: navOpen ? '0.9s' : '0s',
+              opacity: navOpen ? '1' : '0',
+            }}>What is GPT-4?</Link>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#possibility">OpenAI</Link>
+            <Link to="/#possibility" onClick={() => setNavOpen(!navOpen)}
+            style={{
+              top: navOpen ? '0' : '120px',
+              transitionDelay: navOpen ? '1s' : '0s',
+              opacity: navOpen ? '1' : '0',
+            }}>OpenAI</Link>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#features">Case Studies</Link>
+            <Link to="/#features" onClick={() => setNavOpen(!navOpen)}
+            style={{
+              top: navOpen ? '0' : '120px',
+              transitionDelay: navOpen ? '1.1s' : '0s',
+              opacity: navOpen ? '1' : '0',
+            }}>Case Studies</Link>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#blog">Libary</Link>
+            <Link to="/#blog" onClick={() => setNavOpen(!navOpen)}
+            style={{
+              top: navOpen ? '0' : '120px',
+              transitionDelay: navOpen ? '1.2s' : '0s',
+              opacity: navOpen ? '1' : '0',
+            }}>Libary</Link>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
-          
         </ul>
+        <div className="gpt3__navbar--menu--footer">
+          <div className="location">
+            <span>Toronto, ON</span>
+          </div>
+        </div>
+        <div className="gpt3__navbar--menu--socialMedia">
+          <ul>
+            <li>
+              <a href="#">Youtube</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )
