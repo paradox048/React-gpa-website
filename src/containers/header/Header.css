@@ -11,8 +11,8 @@
 
 .gpt3__header--hero--text {
     color: #FFF;
-    text-align: center;
-    font-family: Manrope;
+    text-align: left;
+    font-family: var(--font-family);
     font-size: 200px;
     font-style: normal;
     font-weight: 700;
@@ -69,11 +69,41 @@
     border-radius: 20px;
 }
 
+/********************************************** MEDIA SCREENS **********************************************/
+
+@media screen and (max-width: 1050px) {
+    .gpt3__header--hero--text
+    {
+        font-size: 150px; 
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .gpt3__header--hero--text
+    {
+        font-size: 100px; 
+    }
+
+    .gpt3__navbar--hero--subtext_layout,
+    .gpt3__navbar--hero--subtext {
+        width: 100%;
+        height: 12em;
+        flex-direction: column;
+        justify-content: left;
+        flex-shrink: 0;
+    }
+
+    .gpt3__header--hero--padding {
+        height: 200px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .gpt3__header--hero--text
     {
         font-size: 100px; 
     }
 }
+
 
 

@@ -74,7 +74,7 @@
     z-index: 1;
     position: fixed;
     background: #18181c;;
-    top: -100%;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -180,21 +180,21 @@
 
 .gpt3__navbar--menu--footer {
     position: absolute;
+    width: 100%;
     bottom: 0;
     left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
+    padding: 2em;
     display: flex;
     justify-content: space-between;
 }
 
-.gpt3__navbar--menu--socialMedia {
+.gpt3__navbar--menu--socialMedia ul{
     display: flex;
 }
 
 .gpt3__navbar--menu--socialMedia ul li {
-    list-style: none;;
+    list-style: none;
+
 }
 
 .gpt3__navbar--menu--socialMedia ul li a {
@@ -204,12 +204,13 @@
     font-family: var(--font-family);
     color: #fff;
     text-transform: uppercase;
-    padding-left: 2rem;
+    padding-left: 2em;
     opacity: 0;
-    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1); /* transition: all 0.5s ease-in-out; */
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1); 
 }
 
 .location {
+    color: #fff;
     position: relative;
     bottom: -20%;
     opacity: 0;
@@ -234,7 +235,16 @@
     }
 
     .gpt3__navbar--menu--overlay {
-        display: block;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .gpt3__navbar--menu--links li a {
+        font-size: 2em;
+    }
+    .gpt3__navbar--menu--overlay {
+        display: flex;
     }
 
     .location {
@@ -247,15 +257,6 @@
 
     .gpt3__navbar--menu--socialMedia ul li a {
         padding: 0 1em;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .gpt3__navbar--menu--links li a {
-        font-size: 2em;
-    }
-    .gpt3__navbar--menu--overlay {
-        display: block;
     }
 }
 
@@ -273,7 +274,7 @@
     }
 
     .gpt3__navbar--menu_container--links--sign {
-        display: block;
+        display: flex;
     }
 
     .gpt3__navbar--menu--overlay {

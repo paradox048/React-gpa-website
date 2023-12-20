@@ -90,19 +90,34 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="gpt3__navbar--menu--footer">
-          <div className="location">
+          <div className="location"
+          style={{
+            bottom: navOpen ? '0' : '-20px',
+            opacity: navOpen ? '1' : '0',
+            transitionDelay: navOpen ? '1.2s' : '0s',
+          }}>
             <span>Toronto, ON</span>
           </div>
-        </div>
-        <div className="gpt3__navbar--menu--socialMedia">
-          <ul>
-            <li>
-              <a href="#">Youtube</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-          </ul>
+          <div className="gpt3__navbar--menu--socialMedia">
+            <ul>
+              <li>
+                <a href="#" 
+                style={{
+                  bottom: navOpen ? '0' : '-20px',
+                  opacity: navOpen ? '1' : '0',
+                  transitionDelay: navOpen ? '1.3s' : '0s',
+                }}>Youtube</a>
+              </li>
+              <li>
+                <a href="#" 
+                style={{
+                  bottom: navOpen ? '0' : '-20px',
+                  opacity: navOpen ? '1' : '0',
+                  transitionDelay: navOpen ? '1.4s' : '0s',
+                }}>Instagram</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
