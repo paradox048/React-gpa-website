@@ -1,3 +1,4 @@
+
 .gpt3__header--hero--padding {
     display: flex;
     width: 897px;
@@ -10,14 +11,13 @@
 .gpt3__navbar--hero--text_copyright {
     width: 60px;
     height: 60px;
-    flex-shrink: 0;
 
     color: #FFF;
     text-align: center;
     font-family: Manrope;
     font-size: 20px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     line-height: normal;
     position: relative;
     top: -140px;
@@ -36,11 +36,51 @@
 .gpt3__header--hero--background--padding,
 .gpt3__header--hero--background {
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 733px;
     flex-shrink: 0;
 
     background: url('../../assets/robot.png');
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
+
+.gpt3__navbar--hero--subtext_layout,
+.gpt3__navbar--hero--subtext {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+    width: 515px;
+    height: 256px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.gpt3__navbar--hero--email__input {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    position: relative;
+    top: -100px;    
+}
+
+
+.gpt3__navbar--hero--email__input button {
+    background: #042C54;
+    min-height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-family: var(--font-family);
+    border-radius: 20px;
+}
+
 

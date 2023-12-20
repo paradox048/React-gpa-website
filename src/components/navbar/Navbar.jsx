@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './Navbar.css'
 import logo from '../../assets/chat-gpt.png'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
   return (
@@ -14,8 +14,9 @@ const Menu = () => {
     </>
   )
 }
+
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <div className='gpt3__navbar'>
       <div className='gpt3__navbar--links'>
@@ -30,22 +31,40 @@ const Navbar = () => {
         <p>Sign in</p>
         <button>Sign up</button>
       </div>
-      <div className = 'gpt3__navbar--menu'>
-        {toggleMenu 
-          ? <RiCloseLine color="fff" size = {27} onClick={() => setToggleMenu(false)}/>
-          : <RiMenu3Line color="fff" size = {27} onClick={() => setToggleMenu(true)}/>
-        }
-        {toggleMenu && (
-        <div className='gpt3__navbar--menu_container scale-up-center'>
-          <div className='gpt3__navbar--menu_container--links'>
-            <Menu />
-          </div>
-          <div className = 'gpt3__navbar--menu_container--links--sign'>
-            <p>Sign in</p>
-            <button>Sign up</button>
-          </div>
-        </div>
-        )}
+      <div className = 'gpt3__navbar--menu' onClick={() => setNavOpen(!navOpen)}>
+       <div className= {navOpen ? "gpt3__navbar--menu__hamBox hamBoxOpen" : 'gpt3__navbar--menu__hamBox'}>
+        <span className= {navOpen ? 'gpt3__navbar--menu__hamBox--lineTop spin' : 'gpt3__navbar--menu__hamBox--lineTop'}></span>
+        <span className={navOpen ? 'gpt3__navbar--menu__hamBox--lineBottom spin' : 'gpt3__navbar--menu__hamBox--lineBottom'}></span>
+       </div>
+      </div>
+      <div className= "gpt3__navbar--menu--overlay" 
+      style={{
+        top: navOpen? '0' : '-100%',
+        transitionDelay: navOpen ? '0s' : '0s',
+      }}>
+        <ul className="gpt3__navbar--menu--links">
+          <li className="gpt3__navbar--menu--links_item">
+            <Link to="/#home">home</Link>
+            <div className="gpt3__navbar--menu--links_item--wrapper"></div>
+          </li>
+          <li className="gpt3__navbar--menu--links_item">
+            <Link to="/#wgpt3">What is GPT-4?</Link>
+            <div className="gpt3__navbar--menu--links_item--wrapper"></div>
+          </li>
+          <li className="gpt3__navbar--menu--links_item">
+            <Link to="/#possibility">OpenAI</Link>
+            <div className="gpt3__navbar--menu--links_item--wrapper"></div>
+          </li>
+          <li className="gpt3__navbar--menu--links_item">
+            <Link to="/#features">Case Studies</Link>
+            <div className="gpt3__navbar--menu--links_item--wrapper"></div>
+          </li>
+          <li className="gpt3__navbar--menu--links_item">
+            <Link to="/#blog">Libary</Link>
+            <div className="gpt3__navbar--menu--links_item--wrapper"></div>
+          </li>
+          
+        </ul>
       </div>
     </div>
   )
