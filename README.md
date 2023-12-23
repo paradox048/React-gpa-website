@@ -1,5 +1,4 @@
-# Chat gpt based website built using React, HTML and CSS
-- Built to gain familiarity with React
+
 
 ## Available Scripts
 
