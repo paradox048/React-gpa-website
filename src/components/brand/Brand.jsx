@@ -1,7 +1,7 @@
 import React from 'react'
 import './Brand.css'
-import './imports.js'
 import { Google, Slack, Shopify, DropBox } from './imports.js'
+import './imports.js'
 
 const Brand = () => {
   return (
