@@ -1,7 +1,7 @@
 .container {
-    display: flex;
-    overflow: hidden;
-    padding: 5em;
+    display: grid;
+    /*center the grid*/
+    justify-content: center;
 }
 
 .container div {
@@ -9,6 +9,7 @@
     background-color:  #fff;
     border-radius: 25px;
     cursor: pointer;
+    outline: 2px black solid;
 }
 
 .container__feature1 {
@@ -29,7 +30,7 @@
 }
 
 .container__feature2 {
-    margin-top: 15em;
+    margin-top: -10%;
     width: 400px;
     height: 200px;
 }
@@ -42,7 +43,7 @@
 }
 
 .container__feature3 {
-    margin-top: 30em;
+    margin-top: -10%;
     width: 400px;
     height: 200px;
 }
@@ -55,41 +56,7 @@
 }
 
 /********************************************** MEDIA SCREENS **********************************************/
-@media screen and (min-width: 550px) and (max-width: 1300px) {
-    .container {
-        display: grid;
-        /*center the grid*/
-        justify-content: center;
-    }
-
-    .container div {
-        outline: 2px black solid;
-    }
-
-    .container__feature1 {
-        margin-top: 0;
-  
-    }
-
-    .container__feature2 {
-        margin-top: -10%;
-  
-    }
-
-    .container__feature3 {
-        margin-top: -10%;
-    }  
-}
-
 @media screen and (max-width: 550px) {
-    .container {
-        display: grid;
-    }
-
-    .container div {
-        outline: 2px black solid;
-    }
-
     .container__feature1 {
         margin-top: 0;
         width: 100%;

@@ -6,8 +6,6 @@ const Features = () => {
             <div className="container__feature1">
                 <h1>Education</h1>
             </div>
-            <div className="arrowDown">
-            </div>
             <div className="container__feature2">
                 <h1>Knowledge Base</h1>
             </div>

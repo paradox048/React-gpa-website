@@ -60,7 +60,7 @@
     background: #000;
 }
 
-@media  screen and (max-width: 1024px) {
+@media  screen and (max-width: 1200px) {
     .cta__container {
         display: grid;
         justify-content: center;
@@ -82,7 +82,7 @@
     
     .cta__container--text2 p {
         color: #000;
-        font-size: 15px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 800;
         line-height: 45px; /* 187.5% */
@@ -95,6 +95,56 @@
         width: 189.136px;
         height: 59.398px;
         margin-left: 50%;   
+        flex-shrink: 0;
+        color: white;
+        margin-top: -14vh;  
+        border-radius: 40px;
+        background: #000;
+    }
+    
+}
+
+@media  screen and (max-width: 750px) {
+    .cta__container--text2 p {
+        font-size: 15px;
+    }        
+}
+
+@media  screen and (max-width: 550px) {
+    .cta__container {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .cta__container--text1 {
+        margin-left: 40vh;
+        /* border: 1px solid #000; */
+        margin-top: 1.5em;
+    }
+    
+    .cta__container--text2 {
+        /* border: 1px solid #000; */
+        width: 600px;
+        height: 150px;
+        margin-left: 40vh;
+        margin-top: -2vh;
+    }
+    
+    .cta__container--text2 p {
+        color: #000;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 45px; /* 187.5% */
+    }
+    
+    
+    .cta__container__signUpButton {
+        border: 1px solid #119faf;
+    
+        width: 189.136px;
+        height: 59.398px;
+        margin-left: 49vh;   
         flex-shrink: 0;
         color: white;
         margin-top: -14vh;  

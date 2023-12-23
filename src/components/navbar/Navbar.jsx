@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-          <a href="#possibility" onClick={() => setNavOpen(!navOpen)}
+          <a href="#features" onClick={() => setNavOpen(!navOpen)}
             style={{
               top: navOpen ? '0' : '120px',
               transitionDelay: navOpen ? '1s' : '0s',
