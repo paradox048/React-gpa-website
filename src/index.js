@@ -8,4 +8,4 @@ ReactDOM.render(
 <BrowserRouter>
     <App />
 </BrowserRouter>,
- document.getElementById("root")); // render the App component to the DOM
+document.getElementById("root")); // render the App component to the DOM

@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/chat-gpt.png'
-import { Link } from 'react-router-dom'
 
 const Menu = () => {
   return (
     <>
     <p><a href="#home">Home</a></p>
-    <p><a href="#wgpt3">What is GPT</a></p>
-    <p><a href="#possibility">Open AI</a></p>
-    <p><a href="#features">Case Studies</a></p>
-    <p><a href="#blog">Library</a></p>
+    <p><a href="#wgpt4">What is GPT</a></p>
+    <p><a href="#features">Open AI</a></p>
+    <p><a href="#blog">Blog</a></p>
     </>
   )
 }
@@ -44,48 +42,39 @@ const Navbar = () => {
       }}>
         <ul className="gpt3__navbar--menu--links">
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#home" onClick={() => setNavOpen(!navOpen)}
+            <a href="#home" onClick={() => setNavOpen(!navOpen)}
             style={{
               top: navOpen ? '0px' : '120px',
               transitionDelay: navOpen ? '0.8s' : '0s',
               opacity: navOpen ? '1' : '0',
-            }}>Home</Link>
+            }}>Home</a>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#wgpt3" onClick={() => setNavOpen(!navOpen)} 
+          <a href="#wgpt4" onClick={() => setNavOpen(!navOpen)} 
             style={{
               top: navOpen ? '0' : '120px',
               transitionDelay: navOpen ? '0.9s' : '0s',
               opacity: navOpen ? '1' : '0',
-            }}>What is GPT-4?</Link>
+            }}>What is GPT-4?</a>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#possibility" onClick={() => setNavOpen(!navOpen)}
+          <a href="#possibility" onClick={() => setNavOpen(!navOpen)}
             style={{
               top: navOpen ? '0' : '120px',
               transitionDelay: navOpen ? '1s' : '0s',
               opacity: navOpen ? '1' : '0',
-            }}>OpenAI</Link>
+            }}>OpenAI</a>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
           <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#features" onClick={() => setNavOpen(!navOpen)}
-            style={{
-              top: navOpen ? '0' : '120px',
-              transitionDelay: navOpen ? '1.1s' : '0s',
-              opacity: navOpen ? '1' : '0',
-            }}>Case Studies</Link>
-            <div className="gpt3__navbar--menu--links_item--wrapper"></div>
-          </li>
-          <li className="gpt3__navbar--menu--links_item">
-            <Link to="/#blog" onClick={() => setNavOpen(!navOpen)}
+          <a href="#blog" onClick={() => setNavOpen(!navOpen)}
             style={{
               top: navOpen ? '0' : '120px',
               transitionDelay: navOpen ? '1.2s' : '0s',
               opacity: navOpen ? '1' : '0',
-            }}>Libary</Link>
+            }}>Blog</a>
             <div className="gpt3__navbar--menu--links_item--wrapper"></div>
           </li>
         </ul>
@@ -101,7 +90,7 @@ const Navbar = () => {
           <div className="gpt3__navbar--menu--socialMedia">
             <ul>
               <li>
-                <a href="#" 
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
                 style={{
                   bottom: navOpen ? '0' : '-20px',
                   opacity: navOpen ? '1' : '0',
@@ -109,7 +98,7 @@ const Navbar = () => {
                 }}>Youtube</a>
               </li>
               <li>
-                <a href="#" 
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
                 style={{
                   bottom: navOpen ? '0' : '-20px',
                   opacity: navOpen ? '1' : '0',

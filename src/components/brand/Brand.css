@@ -1,0 +1,21 @@
+.gpt4__brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt4__sectionPadding div {
+    flex: 1;
+    display: flex;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 120px; 
+    margin: 4em;
+    justify-content: center;
+}
+
+.gpt4__sectionPadding div img {
+    max-width: 50%;
+    max-height: 50%;
+}

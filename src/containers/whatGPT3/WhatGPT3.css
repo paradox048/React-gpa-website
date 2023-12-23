@@ -1,0 +1,55 @@
+.gpt4__WhatisGPT {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.gpt4__WhatisGPT--header {
+    color: #FFF;
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    padding: 3em;
+    min-width: 20em;
+}
+
+.bodyTextPadding {
+    padding: 6em
+}
+
+.gpt4__WhatisGPT--body p{
+    color: #d0d0d0;
+    text-align: justify;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+/********************************************** MEDIA SCREENS **********************************************/
+@media screen and (max-width: 1024px) {
+    .gpt4__WhatisGPT {
+        display: grid;
+    }
+
+    .gpt4__WhatisGPT--header {
+        padding: 2em;
+        min-width: 0em;
+        font-size: 1.5em;
+    }
+
+    .bodyTextPadding {
+        padding: 10em;
+        /* Bring the text closer to the header*/
+        padding-top: 0em;
+    }
+    .gpt4__WhatisGPT--body p{
+        font-size: 1em;
+    }
+}
+
+

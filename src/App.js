@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header} from './containers' // import the containers we just created
+import { Footer, Blog, Features, WhatGPT3, Header} from './containers' // import the containers we just created
 import {CTA, Brand, Navbar} from './components' // import the components we just created
 
 
@@ -15,7 +15,6 @@ const App = () => { // define the App component
             <Brand />
             <WhatGPT3 />
             <Features />
-            <Possibility />
             <CTA />
             <Blog />
             <Footer />
